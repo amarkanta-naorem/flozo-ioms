@@ -1,5 +1,9 @@
+import Sidebar from "@/components/common/_dashboard-sidebar";
+
 export default function Home() {
   return (
-    <h1>Hello</h1>
+    <div className="relative flex gap-4 min-h-screen bg-(--bg-primary) p-4">
+      <Sidebar />
+    </div>
   );
 }
