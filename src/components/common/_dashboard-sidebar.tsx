@@ -14,12 +14,12 @@ import { cn } from "@/lib/utils";
 export const SidebarContext = createContext({ expanded: true });
 
 const MENU_ITEMS = [
-  { icon: <LayoutDashboard size={20} />, text: "Dashboard", href: "/system/dashboard" },
-  { icon: <ShieldUser size={20} />, text: "Employees", href: "/system/employees" },
+  { icon: <LayoutDashboard size={20} />, text: "Dashboard", href: "/dashboard" },
+  { icon: <ShieldUser size={20} />, text: "Employees", href: "/employees" },
   {
     icon: <ShieldCheck size={20} />,
     text: "Administration",
-    href: "/system/setting",
+    href: "/setting",
     subItems: settingsManifest.map((s) => ({ label: s.label, href: s.href })),
   },
 ];

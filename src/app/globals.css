@@ -14,7 +14,7 @@
   --bg-active: #e6e6e6;
   --bg-card: #ffffff;
   --bg-input: #f0f2f5;
-  
+
   /* Text Colors */
   --text-primary: #111b21;
   --text-secondary: #54656f;
@@ -22,68 +22,68 @@
   --text-muted: #8696a1;
   --text-inverse: #ffffff;
   --text-link: #25d366;
-  
+
   /* Border Colors */
   --border-primary: #e9edef;
   --border-secondary: #dfe3e5;
   --border-focus: #25d366;
-  
+
   /* Accent Colors */
   --accent-primary: #25d366;
   --accent-secondary: #00a884;
   --accent-hover: #1da851;
   --accent-muted: #dcf8c6;
-  
+
   /* Status Colors */
   --status-online: #25d366;
   --status-offline: #9ca3af;
   --status-typing: #25d366;
   --status-typing-bg: #dcf8c6;
-  
+
   /* Chat Colors */
   --chat-bg: #efeae2;
   --chat-bubble-outgoing: #dcf8c6;
   --chat-bubble-incoming: #ffffff;
   --chat-timestamp: #667781;
-  
+
   /* Sidebar Colors */
   --sidebar-bg: #ffffff;
   --sidebar-hover: #f2f2f2;
   --sidebar-active: #e6e6e6;
   --sidebar-border: #e9edef;
-  
+
   /* Header Colors */
   --header-bg: #f0f2f5;
   --header-border: #e9edef;
-  
+
   /* Shadow */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  
+
   /* Scrollbar */
   --scrollbar-thumb: rgba(120, 120, 120, 0.3);
   --scrollbar-thumb-hover: rgba(120, 120, 120, 0.5);
-  
+
   /* Overlay */
   --overlay-bg: rgba(0, 0, 0, 0.5);
   --overlay-light: rgba(0, 0, 0, 0.3);
-  
+
   /* Brand Colors */
   --brand-primary: #25d366;
   --brand-secondary: #128c7e;
   --brand-dark: #075e54;
-  
+
   /* Error/Success/Warning */
   --color-error: #dc2626;
   --color-success: #16a34a;
   --color-warning: #d97706;
   --color-info: #2563eb;
-  
+
   /* Red accent for logo */
   --color-red: #dc2626;
-  
+
   /* Focus ring */
   --focus-ring: 0 0 0 2px rgba(37, 211, 102, 0.4);
 }
@@ -114,7 +114,7 @@ select,
   --bg-active: #333333;
   --bg-card: #1e1e1e;
   --bg-input: #2d2d2d;
-  
+
   /* Text Colors */
   --text-primary: #e1e1e1;
   --text-secondary: #aebac4;
@@ -122,68 +122,118 @@ select,
   --text-muted: #6b7a85;
   --text-inverse: #121212;
   --text-link: #25d366;
-  
+
   /* Border Colors */
   --border-primary: #2d2d2d;
   --border-secondary: #3d3d3d;
   --border-focus: #25d366;
-  
+
   /* Accent Colors */
   --accent-primary: #25d366;
   --accent-secondary: #00a884;
   --accent-hover: #1da851;
   --accent-muted: #2d4234;
-  
+
   /* Status Colors */
   --status-online: #25d366;
   --status-offline: #6b7a85;
   --status-typing: #25d366;
   --status-typing-bg: #2d4234;
-  
+
   /* Chat Colors */
   --chat-bg: #121212;
   --chat-bubble-outgoing: #005c4b;
   --chat-bubble-incoming: #2d2d2d;
   --chat-timestamp: #8696a1;
-  
+
   /* Sidebar Colors */
   --sidebar-bg: #1e1e1e;
   --sidebar-hover: #2a2a2a;
   --sidebar-active: #333333;
   --sidebar-border: #2d2d2d;
-  
+
   /* Header Colors */
   --header-bg: #1e1e1e;
   --header-border: #2d2d2d;
-  
+
   /* Shadow */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
-  
+
   /* Scrollbar */
   --scrollbar-thumb: rgba(120, 120, 120, 0.4);
   --scrollbar-thumb-hover: rgba(120, 120, 120, 0.6);
-  
+
   /* Overlay */
   --overlay-bg: rgba(0, 0, 0, 0.7);
   --overlay-light: rgba(0, 0, 0, 0.5);
-  
+
   /* Brand Colors */
   --brand-primary: #25d366;
   --brand-secondary: #128c7e;
   --brand-dark: #075e54;
-  
+
   /* Error/Success/Warning */
   --color-error: #ef4444;
   --color-success: #22c55e;
   --color-warning: #f59e0b;
   --color-info: #3b82f6;
-  
+
   /* Red accent for logo */
   --color-red: #ef4444;
-  
+
   /* Focus ring */
   --focus-ring: 0 0 0 2px rgba(37, 211, 102, 0.3);
+}
+
+
+/* Scrollbar Styles */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Enhanced scrollbar with smooth transitions */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+    overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--scrollbar-thumb), var(--scrollbar-thumb-hover));
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: all 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--scrollbar-thumb-hover), var(--scrollbar-thumb));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(135deg, var(--scrollbar-thumb-hover), var(--scrollbar-thumb));
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
 }
